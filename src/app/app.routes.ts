@@ -1,6 +1,11 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'ui',
+    pathMatch: 'full', // Ensures an exact match to redirect
+},
     {
         path: 'ui',
         loadComponent: () => import('./ui/ui.component').then((m) => m.UiComponent),
