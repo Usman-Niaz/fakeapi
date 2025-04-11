@@ -1,0 +1,35 @@
+<div class="flex flex-wrap gap-4 mt-4 ml-4 mr-4">
+  
+  @for(user of users; track user.userId){
+
+    <div class="max-w-sm  bg-white border border-gray-200 rounded-lg shadow-md p-6 mb-6">
+      
+   
+      <div class="mb-4">
+        <p class="text-xl font-semibold"><strong>Name:</strong> {{ user.fname }} {{ user.lname }}</p>
+      </div>
+      <div class="mb-4">
+        <p class="text-lg"><strong>City:</strong> {{ user.city }}</p>
+      </div>
+      <div class="mb-4">
+        <p class="text-lg"><strong>State:</strong> {{ user.state }}</p>
+      </div>
+      <div class="mb-4">
+        <p class="text-lg"><strong>Zipcode:</strong> {{ user.zipcode }}</p>
+      </div>
+      <div class="flex justify-between">
+        <button class="hover:text-red-700 text-red-500" (click)="deleteUser(user.id)">
+          <fa-icon [icon]="ico"></fa-icon>
+        </button>
+        
+        <button class="hover:text-blue-700 text-blue-500" [routerLink]="['/edit', user.id]">
+          <fa-icon [icon]="edit"></fa-icon>
+        </button>
+      </div>
+      
+      
+    </div>
+    
+  }
+  
+</div>

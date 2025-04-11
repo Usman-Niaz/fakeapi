@@ -1,0 +1,28 @@
+{
+  "userList": [
+    {
+      "id": "28f2",
+      "fname": "Usman",
+      "lname": "Swati",
+      "city": "Mansehra",
+      "state": "KPK",
+      "zipcode": "212311"
+    },
+    {
+      "id": "22bf",
+      "fname": "usman ",
+      "lname": "swati ",
+      "city": "Darband",
+      "state": "AMB state",
+      "zipcode": "1234"
+    },
+    {
+      "id": "e02c",
+      "fname": "usman khan",
+      "lname": "niaz",
+      "city": "Mansehra",
+      "state": "KPK",
+      "zipcode": "ka11"
+    }
+  ]
+}
